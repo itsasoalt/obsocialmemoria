@@ -2177,6 +2177,12 @@ article section:first-child {
   transition: .3s ease-in-out;
   color: #000;
   z-index: 2; }
+  .menu-mobile div {
+    position: absolute;
+    left: 2.5rem;
+    top: .15rem;
+    font-size: 1.25rem;
+    color: #F85C45; }
 
 .menu-mobile.closed {
   left: -200px; }
@@ -2201,7 +2207,7 @@ article section:first-child {
   color: #000; }
 
 .btn-anim-three {
-  background: rgba(0, 0, 0, 0.6);
+  background: #f85c45;
   display: inline-block;
   width: 30px;
   height: 30px;
