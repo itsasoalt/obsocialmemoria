@@ -2068,35 +2068,10 @@ a:hover {
   cursor: pointer;
   margin: 3.5rem auto 0;
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1); }
-  .btn_blog {
-    display: block;
-    margin: 0 auto -1.75rem;
-    text-align: center;
-    max-width: 13rem; }
-    .btn_blog--back {
-      position: fixed;
-      bottom: 6rem;
-      left: 0;
-      display: none;
-      padding-left: 1rem;
-      padding-right: 1rem; }
-      .btn_blog--back span {
-        display: none; }
-        @media all and (min-width: 1024px) {
-          .btn_blog--back span {
-            display: inline; } }
-    .btn_blog_arrow--back {
-      /* IE 9 */
-      -webkit-transform: rotate(90deg);
-      /* Chrome, Safari, Opera */
-      transform: rotate(90deg); }
-  .btn_evento {
-    position: absolute;
-    bottom: 0; }
   .btn_subir {
     position: fixed;
     right: 0;
-    bottom: 6rem;
+    bottom: 4rem;
     z-index: 1;
     padding-left: 1rem;
     padding-right: 1rem; }
@@ -2105,6 +2080,13 @@ a:hover {
       -webkit-transform: rotate(180deg);
       /* Chrome, Safari, Opera */
       transform: rotate(180deg); }
+  .btn_bajar {
+    position: fixed;
+    right: 0;
+    bottom: .5rem;
+    z-index: 1;
+    padding-left: 1rem;
+    padding-right: 1rem; }
   .btn:active {
     background-color: #F28D7E;
     color: #fff;
@@ -2189,3 +2171,31 @@ a:hover {
     @media all and (min-width: 768px) {
       .blog_selector select {
         width: 45%; } }
+
+section {
+  min-height: 100vh;
+  width: 100%; }
+
+article section:nth-child(2n) {
+  color: #fff;
+  background-color: #2B3E50; }
+
+article section:nth-child(2n+1) {
+  color: #2B3E50;
+  background-color: #E1E1E1; }
+
+article section:first-child {
+  color: #fff;
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(43, 62, 80, 0.6) 0%, rgba(248, 92, 69, 0.6) 100%), url(../img/portada.jpg);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(43, 62, 80, 0.6) 0%, rgba(248, 92, 69, 0.6) 100%), url(../img/portada.jpg);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#992b3e50', endColorstr='#99f85c45',GradientType=0 ), url(../img/portada.jpg);
+  /* IE6-9 */
+  background-size: cover, cover; }
+  article section:first-child div {
+    position: relative;
+    top: 25%;
+    -webkit-transform: translateY(25%);
+            transform: translateY(25%); }
