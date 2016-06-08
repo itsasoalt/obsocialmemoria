@@ -18,7 +18,7 @@
 	box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
 
 	&_subir {
-		position: fixed;
+		position: absolute;
 		right: 0;
 		bottom: 4rem;
 		z-index: 1;
@@ -31,9 +31,9 @@
 		}
 	}
 	&_bajar {
-		position: fixed;
+		position: absolute;
 		right: 0;
-		bottom: .5rem;
+		bottom: 0.5rem;
 		z-index: 1;
 		padding-left: 1rem;
 		padding-right: 1rem;

@@ -1,6 +1,7 @@
 section {
 min-height: 100vh;
 width: 100%;
+position: relative;
 }
 article section:nth-child(2n) {
 	color: $color-w;
@@ -20,13 +21,17 @@ article section:first-child {
 	background-size: cover, cover;
 	& div {
 		position: relative;
-  		top: 25%;
-  		transform: translateY(25%);
+  		top: 50%;
+  		transform: translateY(0%);
 	}
 }
 
 .img--lg {
 	max-width: 100%;
+}
+.img--md {
+	width: 45%;
+	display: inline-block;
 }
 .img--sm {
 	width: 25%;
