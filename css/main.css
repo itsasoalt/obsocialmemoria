@@ -2069,7 +2069,7 @@ a:hover {
   margin: 3.5rem auto 0;
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1); }
   .btn_subir {
-    position: fixed;
+    position: absolute;
     right: 0;
     bottom: 4rem;
     z-index: 1;
@@ -2081,9 +2081,9 @@ a:hover {
       /* Chrome, Safari, Opera */
       transform: rotate(180deg); }
   .btn_bajar {
-    position: fixed;
+    position: absolute;
     right: 0;
-    bottom: .5rem;
+    bottom: 0.5rem;
     z-index: 1;
     padding-left: 1rem;
     padding-right: 1rem; }
@@ -2138,7 +2138,8 @@ a:hover {
 
 section {
   min-height: 100vh;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
 
 article section:nth-child(2n) {
   color: #fff;
@@ -2168,7 +2169,7 @@ article section:first-child {
   max-width: 100%; }
 
 .img--md {
-  width: 50%;
+  width: 45%;
   display: inline-block; }
 
 .img--sm {
