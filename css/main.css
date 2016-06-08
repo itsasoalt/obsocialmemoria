@@ -2160,12 +2160,16 @@ article section:first-child {
   background-size: cover, cover; }
   article section:first-child div {
     position: relative;
-    top: 25%;
-    -webkit-transform: translateY(25%);
-            transform: translateY(25%); }
+    top: 50%;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%); }
 
 .img--lg {
   max-width: 100%; }
+
+.img--md {
+  width: 50%;
+  display: inline-block; }
 
 .img--sm {
   width: 25%;
@@ -2175,7 +2179,7 @@ article section:first-child {
   position: fixed;
   height: 100%;
   top: 0;
-  left: 0;
+  right: 0;
   width: 200px;
   background: #fff;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
@@ -2186,18 +2190,18 @@ article section:first-child {
   z-index: 2; }
   .menu-mobile div {
     position: absolute;
-    left: 2.5rem;
+    right: 2.5rem;
     top: .15rem;
     font-size: 1.25rem;
     color: #F85C45; }
 
 .menu-mobile.closed {
-  left: -200px; }
+  right: -200px; }
 
 .menu-mobile .btn-anim-three {
   position: fixed;
   top: 8px;
-  left: 0px; }
+  right: 0px; }
 
 .menu-mobile .nav {
   padding: 0;
