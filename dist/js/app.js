@@ -79,13 +79,19 @@ $(document).ready(function() {
     $('.to-prev9').click(function() {
       $(window).scrollTo($('#nueve'),400);
     });
+    $('.to-next11').click(function() {
+      $(window).scrollTo($('#once'),400);
+    });
+
+    $('.to-prev10').click(function() {
+      $(window).scrollTo($('#diez'),400);
+    });
     $('.to-next12').click(function() {
       $(window).scrollTo($('#doce'),400);
     });
 
-
-    $('.to-prev10').click(function() {
-      $(window).scrollTo($('#diez'),400);
+    $('.to-prev11').click(function() {
+      $(window).scrollTo($('#once'),400);
     });
     $('.to-next13').click(function() {
       $(window).scrollTo($('#trece'),400);
@@ -93,12 +99,5 @@ $(document).ready(function() {
 
     $('.to-prev12').click(function() {
       $(window).scrollTo($('#doce'),400);
-    });
-    $('.to-next14').click(function() {
-      $(window).scrollTo($('#catorce'),400);
-    });
-
-    $('.to-prev13').click(function() {
-      $(window).scrollTo($('#trece'),400);
     });
 });
