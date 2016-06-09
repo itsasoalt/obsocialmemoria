@@ -2165,16 +2165,32 @@ article section:first-child {
     -webkit-transform: translateY(0%);
             transform: translateY(0%); }
 
+a {
+  position: relative; }
+
+.ver-mas {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 300%;
+  width: 3rem;
+  height: 3rem; }
+
 .img--lg {
-  max-width: 100%; }
+  width: 100%; }
 
 .img--md {
   width: 45%;
-  display: inline-block; }
+  padding: 2.5%;
+  display: inline-block;
+  vertical-align: top; }
 
 .img--sm {
   width: 20%;
-  display: inline-block; }
+  padding: 2.5%;
+  display: inline-block;
+  vertical-align: top; }
 
 .menu-mobile {
   position: fixed;
