@@ -7,7 +7,10 @@ $(document).ready(function() {
   //navegador menu
   $('.menu-item a').click(function() {
     $('.menu-mobile').toggleClass( "closed" );
+    $(".btn-anim-three").toggleClass( "closed" );
   })
+
+  
   //flechas navegador  
     $('.to-next1').click(function() {
       $(window).scrollTo($('#uno'),400);
